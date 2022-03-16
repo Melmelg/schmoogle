@@ -1,0 +1,16 @@
+body {
+    background-color: white;
+  }
+
+.schoogle{
+    text-align: center;
+    padding-top: 100px;
+}
+
+.form{
+    text-align: center;
+}
+
+.footer-left{
+    background-color: grey;
+}
