@@ -7,7 +7,8 @@ const originalTEXT = lucky.textContent
 lucky.addEventListener('mouseover', changeText);
 lucky.addEventListener('mouseout', revertText);
 
-search.addEventListener('click', function() {alert('HELP ME')});
+search.addEventListener('click', function(){alert('HELP ME')});
+search.addEventListener('click', search);
 
 
 function changeText() {
