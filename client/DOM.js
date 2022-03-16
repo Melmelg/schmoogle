@@ -1,23 +1,24 @@
-const lucky = document.getElementById('lucky');
-const search = document.getElementById('search')
+const lucky = document.getElementById('im_feeling_lucky');
+const search = document.getElementById('smoogle_search')
 
-lucky.addEventListener('click', randomSearch);
-search.addEventListener('click', standSearch);
+/* lucky.addEventListener('click', randomSearch); */
 
 const originalTEXT = lucky.textContent
 lucky.addEventListener('mouseover', changeText);
 lucky.addEventListener('mouseout', revertText);
 
+search.addEventListener('click', function() {alert('HELP ME')});
+
 
 function changeText() {
-    H2.textContent = "PICK ME!";
+    lucky.textContent = "PICK ME!";
 }
 
 function revertText(){
-    H2.textContent= originalTEXT
+    lucky.textContent = originalTEXT
 }
 
-function search(formEntry) {
+function search() {
     //entry = form input
     fetch(`http://localhost:3000/search/${entry}`)
         .then(resp => resp.json())
