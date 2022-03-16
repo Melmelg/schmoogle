@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@1,200&family=Roboto&family=Varta&display=swap');
+
+body {
+    background-color: white;
+  }
+
+.schoogle{
+    text-align: center;
+    padding-top: 100px;
+}
+
+.form{
+    text-align: center;
+}
+
+.footer-left{
+    background-color: grey;
+}
+
+header{
+    padding-top: 100px;
+    text-align: center; 
+    font-size: 300%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.blue{
+    color: rgb(0, 89, 255);
+}
+
+.yellow{
+    color: rgb(255, 217, 0);
+}
+
+.red{
+    color: rgb(255, 17, 0);
+}
+
+.green{
+    color: green;
+}
