@@ -1,10 +1,13 @@
 body {
-    background-color: white;
+    background-color: rgb(216, 20, 20);
   }
 
-.schoogle{
+.schoogle #google_logo{
     text-align: center;
-    padding-top: 100px;
+    padding-top: 112px;
+    padding-bottom: 20px;
+    display: block;
+  
 }
 
 .form{
