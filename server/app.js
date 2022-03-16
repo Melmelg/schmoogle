@@ -4,8 +4,10 @@ const cors = require('cors');
 const PORT = 3000;
 //const PORT = process.env.PORT || 3000;
 
-app.use(cors());
-app.use(express.json())
+app.use(cors({
+  origin: '*'
+}));
+app.use(express.json())  // I don't really know what this does tbh
 
 app.listen(PORT, () => {
   console.log(`Google Schmoogle PORT:${PORT}!`);
@@ -48,6 +50,7 @@ app.get('/data', (req, res) => {
   res.json(queries)
 })
 
+// for the lucky search button
 app.get('/lucky_search', (req, res) => {
   let index = Math.floor(Math.random() * queries.length);
   res.json(queries[index])

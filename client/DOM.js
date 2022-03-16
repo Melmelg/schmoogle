@@ -4,7 +4,20 @@ const search = document.getElementById('search')
 lucky.addEventListener('click', randomSearch);
 search.addEventListener('click', standSearch);
 
-function search(e) {
+const originalTEXT = lucky.textContent
+lucky.addEventListener('mouseover', changeText);
+lucky.addEventListener('mouseout', revertText);
+
+
+function changeText() {
+    H2.textContent = "PICK ME!";
+}
+
+function revertText(){
+    H2.textContent= originalTEXT
+}
+
+function search(formEntry) {
     //entry = form input
     fetch(`http://localhost:3000/search/${entry}`)
         .then(resp => resp.json())
