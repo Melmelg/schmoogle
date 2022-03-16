@@ -1,2 +1,2 @@
 # schmoogle
-lap 1 paired assignment 
+our version of google - coding challenge
